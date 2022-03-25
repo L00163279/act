@@ -9,3 +9,6 @@ jobs:
         with:
           somekey: somevalue
           args: echo ${INPUT_SOMEKEY} | grep somevalue
+      - uses: docker://node:16-buster-slim
+        with:
+          args: -v
